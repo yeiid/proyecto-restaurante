@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+}
+
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 1.8em;
+}
+p{
+    font-size: 1.4em;
+}
+
+/* Header section--------------------------------------- */
+#header{
+    width: calc( 100% - 24em );
+    display: flex;
+    height: 80px;
+    /* border-bottom: 1px solid #ddd; */
+    box-shadow: 0px 4px 8px 4px #ddd;
+    padding: 0 12em;
+    transition: .5s;
+    position: fixed;
+    background-color: rgba(255,255,255,0.95);
+    z-index: 100;
+    top: 0;
+    
+}
+#header:hover{
+    box-shadow: 0px 4px 8px 6px #ccc;
+}
+.header-brand{
+    width: 20%;
+    height: 100%;
+    padding-top: 1.7em;
+}
+.header-brand h3{
+    font-size: 1.2em;
+    color: #5c5c5c;
+    margin: 0; 
+}
+.header-menu{
+    width: 80%;
+    padding-top: 1.7em;
+    text-align: end;
+}
+.header-menu a{
+    color: #4a4a4a;
+    font-size: 1.15em;
+    text-decoration: none;
+    padding: 1.2em;
+}
+/* END Header section--------------------------------------- */
+
+/* Barra de redes sociales*/
+.barra-social a {
+    font-size: 16px;
+  }
+.barra-social {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: flex;
+    transition: all 0.5s;
+}
+.icon-facebook {
+    background: blue;
+    border-radius: 1rem 0 0 0;
+}
+.icon-twitter {
+    background: #339dc5;
+}
+.icon-youtube {
+    background: red;
+}
+.icon:first-child {
+    border-radius: 1rem 0 0 0;
+}
+.icon:last-child {
+    border-radius: 0 0 0 1rem;
+}
+  
+.icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.042);
+}
+.spaces{
+    margin-top: 20%;
+}
+.container-product{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+}
+
+.caja-producto{
+    width: 20%;
+    padding: 1%;
+}
+.caja-producto img{
+    width: 100%;
+    
+}
+
+
+
+/* media queries --------------------------------------------*/
+@media screen and (max-width: 420px) {
+    #header{
+        padding: 0 2em;
+        width: calc( 100% - 4em );
+    }
+    .header-brand{
+        width: 40%;
+    }
+    .header-menu{
+        width: 60%;
+    }
+    .img-container{
+        margin-top: 8em;
+    }
+    .profile{
+        clip-path: circle(45%);
+    }
+    .description{
+        margin-left: 10%;
+        margin-top: 23em;
+    }
+}

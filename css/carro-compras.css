@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+}
+h1{
+  font-size: 3em;
+}
+h2{
+  font-size: 1.8em;
+}
+p{
+  font-size: 1.4em;
+}
+/* Header section--------------------------------------- */
+#header{
+  width: calc( 100% - 24em );
+  display: flex;
+  height: 80px;
+  /* border-bottom: 1px solid #ddd; */
+  box-shadow: 0px 4px 8px 4px #ddd;
+  padding: 0 12em;
+  transition: .5s;
+  position: fixed;
+  background-color: rgba(255,255,255,0.95);
+  z-index: 100;
+  top: 0;
+  
+}
+#header:hover{
+  box-shadow: 0px 4px 8px 6px #ccc;
+}
+.header-brand{
+  width: 20%;
+  height: 100%;
+  padding-top: 1.7em;
+}
+.header-brand h3{
+  font-size: 1.2em;
+  color: #5c5c5c;
+  margin: 0; 
+}
+.header-menu{
+  width: 80%;
+  padding-top: 1.7em;
+  text-align: end;
+}
+.header-menu a{
+  color: #4a4a4a;
+  font-size: 1.15em;
+  text-decoration: none;
+  padding: 1.2em;
+}
+
+
+.spaces{
+  margin-top: 10%;
+}
+.contenedor-partes-menu{
+    width:100%;
+    height:auto;
+    display:flex;
+    margin-bottom: 30px;
+  }
+  .box-img-menu {
+    max-width: 27%;
+    min-width: 20%;
+    margin-right: 20px;
+  }
+  .box-img-menu img{
+    width: 100%;
+  }
+  .box-texto-menu {
+    width: 40%;
+    margin-top: 30px;
+  }
+  .box-texto-menu h4{
+    color: rgb(42, 26, 42);
+    font-size: 22px;
+    margin: 5px 0px 5px 0px;
+  }
+  .box-texto-menu p{
+    font-size: 16px;
+    margin-bottom:5px;
+  }
+  .box-texto-menu p{
+    font-style: 16px;
+    margin-bottom:5px;
+  }
+  .text-class{
+    text-decoration: underline;
+  }
+  .text-class:hover{
+    cursor:pointer;
+    font-weight: 700;
+    color: rgb(95, 53, 95);
+  }
+
+  .contenedor-compras{
+    width: 100%;
+    height:50vh;
+    display: flex;
+  }
+
+  .contenedor-compras-left{
+    width:60%
+}
+
+.contenedor-producto{
+    width:100%;
+    display: flex;
+}
+
+.box-img-menu{
+    width:40%;
+    text-align: center;
+}
+.box-img-menu img{
+    width:90%;
+}
+.box-texto-menu{
+    width:60%;
+}
+  .box-texto-menu h4{
+    color: rgb(42, 26, 42);
+    font-size: 22px;
+    margin: 5px 0px 5px 0px;
+  }
+  .box-texto-menu p{
+    font-size: 16px;
+    margin-bottom:5px;
+  }
+  .box-texto-menu p{
+    font-style: 16px;
+    margin-bottom:5px;
+  }
+  .precios-menu{
+    font-size: 18px;
+    color: rgb(42, 26, 42);
+    font-weight: 800;
+  }
+  .contenedor-cantidad {
+    width: 30%;
+  }
+  .contenedor-cantidad p {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(42, 26, 42);
+    font-weight: 700;
+  }
+  .box-contador {
+    width: auto;
+    display: flex;
+  }
+  .signos-cantidad{
+    font-size: 25px;
+  } 
+  .signos-cantidad:hover{
+    cursor: pointer;
+  }
+  .cantidad {
+    font-size: 20px;
+    width: 40px;
+    border: 1px solid rgb(42, 26, 42);
+    padding: 10px;
+    text-align: center;
+  }
+  .contenedor-compras-right{
+    width:25%;
+  }
+  .total-box {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(195, 195, 195);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+  
+.total-box button {
+    width: 100%;
+    display: inline-block;
+    color: white;
+    background-color: rgba(255, 116, 23, 0.918);
+    padding: 2px 0px;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 30px;
+}
+
+.contenedor-texto-total{
+    width:80%;
+    display: flex;
+    align-items:baseline;
+}
+.contenedor-texto-total p{
+   font-weight: 600;
+   font-size: 19px;
+}
+
+#total_precio{
+    font-weight: 800;
+}  
+
+.total-box button:hover{
+    background-color: rgba(216, 102, 27, 0.918);
+    cursor: pointer;
+}  
+.contenedor-btn-continuar{
+    width: 95%;
+    margin: 50px 50px;
+    display: flex;
+    justify-content: center;
+}
+.continuar-btn{
+    width: 300px;
+    display: inline-block;
+    color: white;
+    background-color: rgba(255, 116, 23, 0.918);
+    padding: 10px 0px;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: auto;
+}
+.continuar-btn:hover{
+    background-color: rgba(216, 102, 27, 0.918);
+    cursor: pointer;
+}
+
+
+
+
